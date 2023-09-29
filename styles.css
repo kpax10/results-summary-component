@@ -49,7 +49,7 @@ body {
 
 .container {
   background-color: var(--clr-white);
-  max-width: 440px;
+  max-width: 599px;
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -201,5 +201,25 @@ h1 {
 .summary button:hover {
   cursor: pointer;
   background-image: linear-gradient(var(--clr-light-slate-blue), var(--clr-light-royal-blue));
+}
 
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-pale-blue);
+  }
+
+  .container {
+    flex-direction: row;
+    max-width: 736px;
+    max-height: 512px;
+    border-radius: 2rem;
+  }
+
+  .result {
+    border-radius: 2rem;
+    max-width: 50%;
+  }
 }
