@@ -10,12 +10,18 @@
   --clr-light-lavender: hsl(241, 100%, 89%);
   --clr-gray: hsl(224, 30%, 27%);
 
+  --clr-red-bg: hsl(0, 100%, 67%, 5%);
+  --clr-orange-bg: hsl(39, 100%, 56%, 5%);
+  --clr-green-bg: hsl(166, 100%, 37%, 5%);
+  --clr-blue-bg: hsl(234, 85%, 45%, 5%);
+
   --clr-light-slate-blue: hsl(252, 100%, 67%);
   --clr-light-royal-blue: hsl(241, 81%, 54%);
   --clr-violet-blue: hsla(256, 72%, 46%, 1);
   --clr-persian-blue: hsla(241, 72%, 46%, 0.3);
 
-  --fs-100: 1.125rem;
+  --fs-100: 1rem;
+  --fs-200: 1.125rem;
   --fs-400: 1.5rem;
   --fs-600: 2rem;
   --fs-700: 3.5rem;
@@ -98,4 +104,93 @@ h1 {
 
 .summary {
   padding: 2rem;
+  color: var(--clr-gray);
+}
+
+.summary h2 {
+  font-size: var(--fs-200);
+  padding-bottom: 1.5rem;
+}
+
+.summary h3 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-500);
+}
+
+.reaction {
+  background: var(--clr-red-bg);
+}
+
+.reaction h3 {
+  color: var(--clr-red);
+}
+
+.memory {
+  background: var(--clr-orange-bg);
+}
+
+.memory h3 {
+  color: var(--clr-orange);
+}
+
+.verbal {
+  background: var(--clr-green-bg);
+}
+
+.verbal h3 {
+  color: var(--clr-green);
+}
+
+.visual {
+  background: var(--clr-blue-bg);
+}
+
+.visual h3 {
+  color: var(--clr-blue);
+}
+
+.reaction,
+.memory,
+.verbal {
+  margin-bottom: 1rem;
+}
+
+.subscore p {
+  color: grey;
+  margin-left: auto;
+}
+
+.subscore span {
+  font-weight: var(--fw-700);
+  color: var(--clr-gray);
+}
+
+.subscore {
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.subscore img {
+  margin-right: 12px;
+}
+
+.summary button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  background: var(--clr-gray);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-700);
+  border: none;
+  padding: 1rem;
+  margin-top: 24px;
+  border-radius: 2rem;
+}
+
+.summary button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(var(--clr-light-slate-blue), var(--clr-light-royal-blue));
+
 }
