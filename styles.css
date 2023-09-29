@@ -44,11 +44,16 @@ html {
 }
 
 body {
-  max-height: 100vh;
+  height: 100vh;
 }
 
 .container {
   background-color: var(--clr-white);
+  max-width: 440px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .result {
@@ -105,6 +110,10 @@ h1 {
 .summary {
   padding: 2rem;
   color: var(--clr-gray);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between
 }
 
 .summary h2 {
