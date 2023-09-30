@@ -77,8 +77,8 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 140px;
-  width: 140px;
+  width: 8.75rem;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   background-image: linear-gradient(var(--clr-violet-blue), var(--clr-persian-blue));
 }
@@ -209,6 +209,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background: var(--clr-pale-blue);
+    padding: 1rem;
   }
 
   .container {
@@ -216,10 +217,51 @@ h1 {
     max-width: 736px;
     max-height: 512px;
     border-radius: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
   .result {
     border-radius: 2rem;
     max-width: 50%;
+    padding: 2.375rem 3.375rem;
+    justify-content: space-between;
+  }
+
+  .result h1 {
+    font-size: var(--fs-400);
+    opacity: 0.7;
+  }
+
+  .result span {
+    font-size: var(--fs-800);
+  }
+
+  .score {
+    width: 12.5rem;
+  }
+
+  .score-blurb h3 {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-500);
+  }
+
+  .score-blurb p {
+    font-size: var(--fs-200);
+    opacity: 0.7;
+    margin-top: 1rem;
+  }
+
+  .summary {
+    padding: 2.375rem;
+  }
+
+  .summary h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-700);
+  }
+
+  .subscore h3,
+  .subscore p {
+    font-size: var(--fs-200);
   }
 }
